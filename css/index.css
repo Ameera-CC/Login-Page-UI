@@ -1,0 +1,168 @@
+body{
+    background-color: gray;
+    margin: 0;
+    padding: 0;
+}
+
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+
+.container-content{
+    display: flex;
+    margin: 20px;
+    padding: 20px;
+
+}
+
+.img-div{
+    flex: 1;
+}
+
+.login-div{
+    flex: 1;
+    background-color: white;
+}
+
+.img-div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.login-content{
+    padding: 20px;
+
+}
+
+
+.text-head{
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    font-size: larger;
+}
+
+.text-heading{
+    text-align: center;
+    color: gray;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 2px 0px 0px 0px;
+
+}
+
+
+
+label, p.Frgt_pswd,p.newAcc-txt {
+    color: #a29c9c;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+}
+
+input[type="text"], input[type="password"]{
+    background-color: transparent;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #a29c9c 1px;
+    font-size: 15px;
+    width: 230px;
+    padding: 3px;
+    margin-top: 5px;
+}
+.username-div,.password-div{
+    padding-top: 20px;
+    padding-left: 10%;
+ }
+.frgt-pswd{
+    text-align: right;
+    padding-right: 15%;
+    font-size: 10px;
+    cursor: pointer;
+
+} 
+
+.buttons{
+    padding-top: 10px;
+    text-align: center;
+}
+
+input[type="submit"] {
+    /* border: 3px solid #333; */
+    outline: none;
+    outline-style: none;
+    border-style: none;
+    background-color: #7b7575;
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-weight: normal;
+    color: #fff;
+    cursor: pointer;
+    
+  }
+
+  .sign-in{
+    display: flex;
+    flex: 1;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+  }
+
+  .sign-in img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+  }
+
+  .sign-in p{
+    color: #726a6a;
+    font-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+
+
+  }
+
+  .create-acc{
+    text-align: center;
+ 
+  }
+
+  a{
+    color: #a29c9c;
+  }
+
+
+
+  @media screen and (max-width: 600px) {
+    /* Add styles specific to smaller screens */
+    .container-content {
+        flex-direction: column; /* Example: Stack elements vertically on smaller screens */
+    }
+
+    .img-div img{
+        width: 100%;
+        height: 300px;
+    }
+
+
+    input[type="text"], input[type="password"]{
+        
+        /* width: 230px; */
+        padding: 3px;
+        margin-right: 50px;
+    }
+}
